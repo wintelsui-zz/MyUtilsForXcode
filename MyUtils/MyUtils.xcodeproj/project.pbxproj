@@ -133,10 +133,10 @@
 			children = (
 				FC4CBF4E21E5CF9A002F29A6 /* SourceEditorExtension.h */,
 				FC4CBF4F21E5CF9A002F29A6 /* SourceEditorExtension.m */,
-				FC4CBF6021E5D7A5002F29A6 /* ColorStatement.h */,
-				FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */,
 				FC4CBF5121E5CF9A002F29A6 /* SourceEditorCommand.h */,
 				FC4CBF5221E5CF9A002F29A6 /* SourceEditorCommand.m */,
+				FC4CBF6021E5D7A5002F29A6 /* ColorStatement.h */,
+				FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
 			);
@@ -404,6 +404,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.test.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,6 +423,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.test.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -441,6 +443,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.test.MyUtils.iMyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -461,6 +464,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.test.MyUtils.iMyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

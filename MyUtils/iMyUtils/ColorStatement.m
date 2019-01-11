@@ -57,13 +57,17 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
             if (([selectString hasPrefix:@"#"] && (selectString.length == 7 || selectString.length == 9)) || ((![selectString hasPrefix:@"#"]) && (selectString.length == 6 || selectString.length == 8))) {
                 NSString *colorString = [ColorStatement colorHex2RGB:selectString];
                 if (colorString.length > 0) {
+                    NSString *startlineString = invocation.buffer.lines[startLine];
+                    NSString *frontStartlineString = [startlineString substringToIndex:startColumn];
+                    NSString *endlineString = invocation.buffer.lines[endLine];
+                    NSString *tailEndlineString = [endlineString substringFromIndex:endColumn];
+                    
+                    NSString *newString = [NSString stringWithFormat:@"%@%@%@",frontStartlineString,colorString,tailEndlineString];
+                    
+                    //需要归到一行
                     for (NSInteger index = startLine; index <= endLine ;index ++){
                         if (index == startLine) {
-                            NSString *line = invocation.buffer.lines[index];
-                            NSString *frontString = [line substringToIndex:startColumn];
-                            NSString *newLine = [frontString stringByAppendingString:colorString];
-                            
-                            [invocation.buffer.lines replaceObjectAtIndex:index withObject:newLine];
+                            [invocation.buffer.lines replaceObjectAtIndex:index withObject:newString];
                         }else{
                             [invocation.buffer.lines replaceObjectAtIndex:index withObject:@""];
                         }
