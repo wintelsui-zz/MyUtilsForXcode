@@ -17,6 +17,8 @@
 		FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF5221E5CF9A002F29A6 /* SourceEditorCommand.m */; };
 		FC4CBF5821E5CF9A002F29A6 /* iMyUtils.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC4CBF4921E5CF9A002F29A6 /* iMyUtils.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */; };
+		FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */; };
+		FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMyUtils.entitlements; sourceTree = "<group>"; };
 		FC4CBF6021E5D7A5002F29A6 /* ColorStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorStatement.h; sourceTree = "<group>"; };
 		FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorStatement.m; sourceTree = "<group>"; };
+		FC76CAD921F9806300C7BA42 /* ColorStringSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorStringSetting.h; sourceTree = "<group>"; };
+		FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorStringSetting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */,
 				FC4CBF3421E5CF5B002F29A6 /* ViewController.h */,
 				FC4CBF3521E5CF5B002F29A6 /* ViewController.m */,
+				FC76CAD921F9806300C7BA42 /* ColorStringSetting.h */,
+				FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */,
 				FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */,
 				FC4CBF3921E5CF5D002F29A6 /* Main.storyboard */,
 				FC4CBF3C21E5CF5D002F29A6 /* Info.plist */,
@@ -245,6 +251,7 @@
 				FC4CBF3621E5CF5B002F29A6 /* ViewController.m in Sources */,
 				FC4CBF3E21E5CF5D002F29A6 /* main.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
+				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +262,7 @@
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
+				FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

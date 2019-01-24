@@ -10,9 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString * const idColorConvert;
+extern NSString * const idColorConvertCustom1;
+
 @interface ColorStatement : NSObject
 
-+ (void)colorHexConvertRGBA:(XCSourceEditorCommandInvocation *)invocation;
++ (void)colorHexConvertRGBA:(XCSourceEditorCommandInvocation *)invocation type:(NSString *)idtype;
 
 @end
 

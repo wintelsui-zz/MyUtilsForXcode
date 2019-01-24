@@ -16,8 +16,10 @@
     // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
     NSString *identifier = invocation.commandIdentifier;
     
-    if ([identifier hasSuffix:@"ColorConvert"]) {
-        [ColorStatement colorHexConvertRGBA:invocation];
+    if ([identifier hasSuffix:idColorConvert]) {
+        [ColorStatement colorHexConvertRGBA:invocation type:idColorConvert];
+    }else if ([identifier hasSuffix:idColorConvertCustom1]) {
+        [ColorStatement colorHexConvertRGBA:invocation type:idColorConvertCustom1];
     }
     completionHandler(nil);
 }

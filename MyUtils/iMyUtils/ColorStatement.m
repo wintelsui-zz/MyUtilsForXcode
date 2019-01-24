@@ -7,6 +7,11 @@
 //
 
 #import "ColorStatement.h"
+#import "ColorStringSetting.h"
+
+
+NSString * const idColorConvert = @"ColorConvert";
+NSString * const idColorConvertCustom1 = @"ColorConvertCustom1";
 
 CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length) {
     NSString *substring = [string substringWithRange:NSMakeRange(start, length)];
@@ -19,7 +24,7 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
 
 @implementation ColorStatement
 
-+ (void)colorHexConvertRGBA:(XCSourceEditorCommandInvocation *)invocation{
++ (void)colorHexConvertRGBA:(XCSourceEditorCommandInvocation *)invocation type:(NSString *)idtype{
     for (XCSourceTextRange *range in invocation.buffer.selections) {
         NSInteger startLine = range.start.line;
         NSInteger startColumn = range.start.column;
@@ -55,7 +60,7 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
             
             //Hex -> RGB 必须大于等于6个字符小于等于8个字符,若带#号加1
             if (([selectString hasPrefix:@"#"] && (selectString.length == 7 || selectString.length == 9)) || ((![selectString hasPrefix:@"#"]) && (selectString.length == 6 || selectString.length == 8))) {
-                NSString *colorString = [ColorStatement colorHex2RGB:selectString];
+                NSString *colorString = [ColorStatement colorHex2RGB:selectString type:idtype];
                 if (colorString.length > 0) {
                     NSString *startlineString = invocation.buffer.lines[startLine];
                     NSString *frontStartlineString = [startlineString substringToIndex:startColumn];
@@ -73,7 +78,11 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
                         }
                     }
                 }
-            }else{
+            }else if (([selectString hasPrefix:@"[UIColor"] || [selectString hasPrefix:@"[NSColor"]) && [selectString hasSuffix:@"]"]) {
+//                [NSColor colorWithWhite:1 alpha:1]
+//                [NSColor colorWithRed:1 green:1 blue:1 alpha:1]
+//                [NSColor colorWithSRGBRed:1 green:1 blue:1 alpha:1]
+                NSString *hexColor = [self colorRGB2Hex:selectString];
                 
             }
         }
@@ -81,7 +90,7 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
     }
 }
 
-+ (NSString *)colorHex2RGB:(NSString *)hexColor{
++ (NSString *)colorHex2RGB:(NSString *)hexColor type:(NSString *)idtype{
     if (hexColor != nil && hexColor.length > 0) {
         NSString *colorString = [[hexColor stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
         colorString = [colorString uppercaseString];
@@ -99,11 +108,63 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
             if (colorString.length == 8) {
                 alpha = colorComponentFrom(colorString, 6, 2) / 255.0;
             }
+            if (idtype != nil && [idtype isEqualToString:idColorConvertCustom1]) {
+                NSString *redPrefixCF1 = [ColorStringSetting getCustomFormat1String];
+                if (redPrefixCF1 != nil && redPrefixCF1.length > 0) {
+                    redPrefixCF1 = [redPrefixCF1 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                    
+                    NSRange rangeRed = [redPrefixCF1 rangeOfString:@"(R)"];
+                    NSRange rangeGreen = [redPrefixCF1 rangeOfString:@"(G)"];
+                    NSRange rangeBlue = [redPrefixCF1 rangeOfString:@"(B)"];
+                    NSRange rangeA = [redPrefixCF1 rangeOfString:@"(A)"];
+                    if (rangeRed.length > 0 && rangeGreen.length > 0 && rangeBlue.length > 0) {
+                        NSString *newString = [redPrefixCF1 stringByReplacingCharactersInRange:rangeRed withString:[NSString stringWithFormat:@"%.2f",red / 255.0]];
+                        
+                        rangeGreen = [newString rangeOfString:@"(G)"];
+                        newString = [newString stringByReplacingCharactersInRange:rangeGreen withString:[NSString stringWithFormat:@"%.2f",green / 255.0]];
+                        
+                        rangeBlue = [newString rangeOfString:@"(B)"];
+                        newString = [newString stringByReplacingCharactersInRange:rangeBlue withString:[NSString stringWithFormat:@"%.2f",blue / 255.0]];
+                        
+                        rangeA = [newString rangeOfString:@"(A)"];
+                        if (rangeA.length > 0){
+                            newString = [newString stringByReplacingCharactersInRange:rangeA withString:[NSString stringWithFormat:@"%.2f",alpha]];
+                        }
+                        return newString;
+                    }
+                }
+            }
+            BOOL hex2rgbDefaultNSColor = [ColorStringSetting getHex2rgbDefaultNSColor];
+            if (hex2rgbDefaultNSColor) {
+                NSString *colorStringFinal = [NSString stringWithFormat:@"[NSColor colorWithRed:%.2f green:%.2f blue:%.2f alpha:%.2f]",red / 255.0, green / 255.0, blue / 255.0, alpha];
+                return colorStringFinal;
+            }
             NSString *colorStringFinal = [NSString stringWithFormat:@"[UIColor colorWithRed:%.2f green:%.2f blue:%.2f alpha:%.2f]",red / 255.0, green / 255.0, blue / 255.0, alpha];
             return colorStringFinal;
         }
     }
     
+    return @"";
+}
+
++ (NSString *)colorRGB2Hex:(NSString *)rgbColor{
+    NSRange range;
+    range.location = @"[NSColor".length;
+    range.length = rgbColor.length - range.location - 1;
+    NSString *subStr = [rgbColor substringWithRange:range];
+    if (subStr.length > 0) {
+        subStr = [subStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSArray *em = [subStr componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@": "]];
+        NSLog(@"em:%@",em);
+        
+        NSString *first = [em firstObject];
+        if ([first hasPrefix:@"colorWithWhite"]) {
+            //wa
+            
+        }else if ([first hasPrefix:@"colorWithRed"] || [first hasPrefix:@"colorWithSRGBRed"]) {
+            //rgba
+        }
+    }
     return @"";
 }
 
