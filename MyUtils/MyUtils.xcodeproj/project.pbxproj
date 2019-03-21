@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */; };
 		FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */; };
 		FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */; };
+		FCF216172243777D008D141E /* EnumSwitchStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF216162243777D008D141E /* EnumSwitchStatement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorStatement.m; sourceTree = "<group>"; };
 		FC76CAD921F9806300C7BA42 /* ColorStringSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorStringSetting.h; sourceTree = "<group>"; };
 		FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorStringSetting.m; sourceTree = "<group>"; };
+		FCF216152243777D008D141E /* EnumSwitchStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumSwitchStatement.h; sourceTree = "<group>"; };
+		FCF216162243777D008D141E /* EnumSwitchStatement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnumSwitchStatement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				FC4CBF5221E5CF9A002F29A6 /* SourceEditorCommand.m */,
 				FC4CBF6021E5D7A5002F29A6 /* ColorStatement.h */,
 				FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */,
+				FCF216152243777D008D141E /* EnumSwitchStatement.h */,
+				FCF216162243777D008D141E /* EnumSwitchStatement.m */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
 			);
@@ -206,7 +211,7 @@
 				};
 			};
 			buildConfigurationList = FC4CBF2921E5CF5B002F29A6 /* Build configuration list for PBXProject "MyUtils" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF216172243777D008D141E /* EnumSwitchStatement.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,

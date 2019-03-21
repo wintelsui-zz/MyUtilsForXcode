@@ -8,6 +8,7 @@
 
 #import "SourceEditorCommand.h"
 #import "ColorStatement.h"
+#import "EnumSwitchStatement.h"
 
 @implementation SourceEditorCommand
 
@@ -20,6 +21,8 @@
         [ColorStatement colorHexConvertRGBA:invocation type:idColorConvert];
     }else if ([identifier hasSuffix:idColorConvertCustom1]) {
         [ColorStatement colorHexConvertRGBA:invocation type:idColorConvertCustom1];
+    }else if ([identifier hasSuffix:idEnum2Switch]) {
+        [EnumSwitchStatement enumToSwitch:invocation];
     }
     completionHandler(nil);
 }

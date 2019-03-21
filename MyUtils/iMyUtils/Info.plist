@@ -44,6 +44,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Color Converter Custom1</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).Enum2Switch</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Enum To Switch</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
