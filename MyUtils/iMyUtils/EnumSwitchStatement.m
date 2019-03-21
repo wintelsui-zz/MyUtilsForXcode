@@ -63,6 +63,8 @@ NSString * const idEnum2Switch = @"Enum2Switch";
         
         symbolString = [[symbolString componentsSeparatedByString:@"::"] lastObject];
         
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"case " withString:@""];
+        
         symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^enum\\s+" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
         
         symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^\\((.*)\\)$" withString:@"$1" options:NSRegularExpressionSearch range: NSMakeRange(0, symbolString.length)];
