@@ -48,7 +48,7 @@ NSString * const idEnum2Switch = @"Enum2Switch";
     
     NSString *finalStr = [self duelWithString:symbolString];
     if (finalStr.length > 0) {
-        [invocation.buffer.lines insertObject:finalStr atIndex:endLine];
+        [invocation.buffer.lines insertObject:finalStr atIndex:endLine + 1];
     }
 }
 
@@ -98,7 +98,7 @@ NSString * const idEnum2Switch = @"Enum2Switch";
             for (NSUInteger index = 0;index < [symbols count];index ++) {
                 NSString *sub = [symbols objectAtIndex:index];
                 if (sub.length > 0) {
-                    NSString *caseStr = [NSString stringWithFormat:@"case %@:\n<#code#>\n",sub];
+                    NSString *caseStr = [NSString stringWithFormat:@"case .%@:\n<#code#>\n",sub];
                     [stringFinal appendString:caseStr];
                 }
             }
