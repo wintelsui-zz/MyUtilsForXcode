@@ -112,25 +112,26 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
                 NSString *redPrefixCF1 = [ColorStringSetting getCustomFormat1String];
                 if (redPrefixCF1 != nil && redPrefixCF1.length > 0) {
                     redPrefixCF1 = [redPrefixCF1 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                    
-                    NSRange rangeRed = [redPrefixCF1 rangeOfString:@"(R)"];
-                    NSRange rangeGreen = [redPrefixCF1 rangeOfString:@"(G)"];
-                    NSRange rangeBlue = [redPrefixCF1 rangeOfString:@"(B)"];
-                    NSRange rangeA = [redPrefixCF1 rangeOfString:@"(A)"];
-                    if (rangeRed.length > 0 && rangeGreen.length > 0 && rangeBlue.length > 0) {
-                        NSString *newString = [redPrefixCF1 stringByReplacingCharactersInRange:rangeRed withString:[NSString stringWithFormat:@"%.2f",red / 255.0]];
-                        
-                        rangeGreen = [newString rangeOfString:@"(G)"];
-                        newString = [newString stringByReplacingCharactersInRange:rangeGreen withString:[NSString stringWithFormat:@"%.2f",green / 255.0]];
-                        
-                        rangeBlue = [newString rangeOfString:@"(B)"];
-                        newString = [newString stringByReplacingCharactersInRange:rangeBlue withString:[NSString stringWithFormat:@"%.2f",blue / 255.0]];
-                        
-                        rangeA = [newString rangeOfString:@"(A)"];
-                        if (rangeA.length > 0){
-                            newString = [newString stringByReplacingCharactersInRange:rangeA withString:[NSString stringWithFormat:@"%.2f",alpha]];
+                    if (redPrefixCF1 != nil && redPrefixCF1.length > 0) {
+                        NSRange rangeRed = [redPrefixCF1 rangeOfString:@"(R)"];
+                        NSRange rangeGreen = [redPrefixCF1 rangeOfString:@"(G)"];
+                        NSRange rangeBlue = [redPrefixCF1 rangeOfString:@"(B)"];
+                        NSRange rangeA = [redPrefixCF1 rangeOfString:@"(A)"];
+                        if (rangeRed.length > 0 && rangeGreen.length > 0 && rangeBlue.length > 0) {
+                            NSString *newString = [redPrefixCF1 stringByReplacingCharactersInRange:rangeRed withString:[NSString stringWithFormat:@"%.2f",red / 255.0]];
+                            
+                            rangeGreen = [newString rangeOfString:@"(G)"];
+                            newString = [newString stringByReplacingCharactersInRange:rangeGreen withString:[NSString stringWithFormat:@"%.2f",green / 255.0]];
+                            
+                            rangeBlue = [newString rangeOfString:@"(B)"];
+                            newString = [newString stringByReplacingCharactersInRange:rangeBlue withString:[NSString stringWithFormat:@"%.2f",blue / 255.0]];
+                            
+                            rangeA = [newString rangeOfString:@"(A)"];
+                            if (rangeA.length > 0){
+                                newString = [newString stringByReplacingCharactersInRange:rangeA withString:[NSString stringWithFormat:@"%.2f",alpha]];
+                            }
+                            return newString;
                         }
-                        return newString;
                     }
                 }
             }
