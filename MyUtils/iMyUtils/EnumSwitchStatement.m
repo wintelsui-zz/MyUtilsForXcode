@@ -16,11 +16,11 @@ NSString * const idEnum2Switch = @"Enum2Switch";
     
     NSString *symbolString = @"";
     NSMutableString *selectString = [[NSMutableString alloc] init];
-    
+    NSInteger endLine = 0;
     for (XCSourceTextRange *range in invocation.buffer.selections) {
         NSInteger startLine = range.start.line;
         NSInteger startColumn = range.start.column;
-        NSInteger endLine = range.end.line;
+        endLine = range.end.line;
         NSInteger endColumn = range.end.column;
         
         
@@ -46,19 +46,89 @@ NSString * const idEnum2Switch = @"Enum2Switch";
     }
     symbolString = [selectString copy];
     
-    symbolString = [[symbolString componentsSeparatedByString:@"::"] lastObject];
+    NSString *finalStr = [self duelWithString:symbolString];
+    if (finalStr.length > 0) {
+        [invocation.buffer.lines insertObject:finalStr atIndex:endLine];
+    }
+}
+
++ (NSString *)duelWithString:(NSString *)symbolString{
     
-    symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^enum\\s+" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
-    
-    symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^\\((.*)\\)$" withString:@"$1" options:NSRegularExpressionSearch range: NSMakeRange(0, symbolString.length)];
-    
-    symbolString = [symbolString stringByReplacingOccurrencesOfString:@"=.*?," withString:@"," options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
-    
-    symbolString = [symbolString stringByReplacingOccurrencesOfString:@"=.*?\n" withString:@",\n" options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
-    
-    NSLog(@"symbol\n%@\n",symbolString);
-    
-    
+    if ([[symbolString lowercaseString] rangeOfString:@"enum "].length > 0){
+        
+        BOOL isSwift = NO;
+        if ([[symbolString lowercaseString] rangeOfString:@"case "].length > 0){
+            isSwift = YES;
+        }
+        
+        symbolString = [[symbolString componentsSeparatedByString:@"::"] lastObject];
+        
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^enum\\s+" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
+        
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"^\\((.*)\\)$" withString:@"$1" options:NSRegularExpressionSearch range: NSMakeRange(0, symbolString.length)];
+        
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"=.*?," withString:@"," options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
+        
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"=.*?\n" withString:@"," options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
+        
+        if (isSwift) {
+            symbolString = [symbolString stringByReplacingOccurrencesOfString:@"\n" withString:@"," options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
+        }else{
+            symbolString = [symbolString stringByReplacingOccurrencesOfString:@"\n" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, symbolString.length)];
+        }
+        
+        NSRange range = [symbolString rangeOfString:@"\\{.*?\\}" options:NSRegularExpressionSearch];
+        if (range.location != NSNotFound) {
+            symbolString = [symbolString substringWithRange:range];
+        }
+        
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"{" withString:@""];
+        symbolString = [symbolString stringByReplacingOccurrencesOfString:@"}" withString:@""];
+        
+        NSLog(@"symbol\n%@\n",symbolString);
+        
+        NSArray *symbols = [symbolString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" ,"]];
+        NSLog(@"symbols\n%@\n",symbols);
+        
+        if (isSwift) {
+            NSString *begin = @"\nswitch <#value#> {\n";
+            NSString *end = @"default:\n}\n";
+            
+            NSMutableString *stringFinal = [[NSMutableString alloc] init];
+            for (NSUInteger index = 0;index < [symbols count];index ++) {
+                NSString *sub = [symbols objectAtIndex:index];
+                if (sub.length > 0) {
+                    NSString *caseStr = [NSString stringWithFormat:@"case %@:\n<#code#>\n",sub];
+                    [stringFinal appendString:caseStr];
+                }
+            }
+            
+            if (stringFinal.length > 0) {
+                NSString *stringFinalF = [NSString stringWithFormat:@"%@%@%@",begin,stringFinal,end];
+                NSLog(@"\n%@",stringFinalF);
+                return stringFinalF;
+            }
+        }else{
+            NSString *begin = @"\nswitch (<#expression#>) {\n";
+            NSString *end = @"default:\nbreak;\n}\n";
+            
+            NSMutableString *stringFinal = [[NSMutableString alloc] init];
+            for (NSUInteger index = 0;index < [symbols count];index ++) {
+                NSString *sub = [symbols objectAtIndex:index];
+                if (sub.length > 0) {
+                    NSString *caseStr = [NSString stringWithFormat:@"case %@:\n<#statements#>\nbreak;\n",sub];
+                    [stringFinal appendString:caseStr];
+                }
+            }
+            
+            if (stringFinal.length > 0) {
+                NSString *stringFinalF = [NSString stringWithFormat:@"%@%@%@",begin,stringFinal,end];
+                NSLog(@"\n%@",stringFinalF);
+                return stringFinalF;
+            }
+        }
+    }
+    return @"";
 }
 
 @end
