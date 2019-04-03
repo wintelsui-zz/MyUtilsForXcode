@@ -24,4 +24,11 @@
 }
 
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender{
+    //当关闭最后一个窗口时，退出app
+//    NSLog(@"codes:%@",@"applicationShouldTerminateAfterLastWindowClosed");
+    return YES;
+}
+
+
 @end
