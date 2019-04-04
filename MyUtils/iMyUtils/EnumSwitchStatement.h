@@ -8,7 +8,7 @@
 
 #import <XcodeKit/XcodeKit.h>
 
-extern NSString * const idEnum2Switch;
+extern NSString * _Nonnull const idEnum2Switch;
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,6 +8,14 @@
 
 #import "EnumSwitchStatement.h"
 
+/**
+ typedef NS_ENUM(NSUInteger, MYENUM) {
+    MYENUMA,
+    MYENUMB,o0
+ };
+ 
+ */
+
 NSString * const idEnum2Switch = @"Enum2Switch";
 
 @implementation EnumSwitchStatement
@@ -54,7 +62,7 @@ NSString * const idEnum2Switch = @"Enum2Switch";
 
 + (NSString *)duelWithString:(NSString *)symbolString{
     
-    if ([[symbolString lowercaseString] rangeOfString:@"enum "].length > 0){
+    if (([[symbolString lowercaseString] rangeOfString:@"enum "].length > 0) || [[symbolString lowercaseString] rangeOfString:@"ns_enum"].length > 0){
         
         BOOL isSwift = NO;
         if ([[symbolString lowercaseString] rangeOfString:@"case "].length > 0){
