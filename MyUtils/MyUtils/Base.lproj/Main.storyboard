@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,18 +12,18 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="MyUtils" id="1Xt-HY-uBw">
+                            <menuItem title="MyUtils for Xcode" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="MyUtils" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="MyUtils for Xcode" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About MyUtils" id="5kV-Vb-QxS">
+                                        <menuItem title="About MyUtils for Xcode" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit MyUtils" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit MyUtils for Xcode" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -56,7 +56,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Hello MyUitls" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Hello MyUtils for Xcode" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="231" y="582" width="650" height="400"/>
@@ -76,9 +76,10 @@
         <!--Tab View Controller-->
         <scene sceneID="VMW-Y8-1uW">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="GY6-eo-VEV" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="2" id="GY6-eo-VEV" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="MFg-4H-QIg"/>
+                        <tabViewItem id="pDR-hN-2RD"/>
                         <tabViewItem identifier="" id="m3N-O2-mLb"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="Iae-ml-pSB">
@@ -92,6 +93,7 @@
                     <connections>
                         <outlet property="tabView" destination="Iae-ml-pSB" id="JxE-xQ-1El"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="pqF-4f-cNh"/>
+                        <segue destination="WFL-mf-LJ8" kind="relationship" relationship="tabItems" id="0kd-WH-TXV"/>
                         <segue destination="ltW-Gw-qx8" kind="relationship" relationship="tabItems" id="LwG-KI-wPD"/>
                     </connections>
                 </tabViewController>
@@ -99,16 +101,16 @@
             </objects>
             <point key="canvasLocation" x="620" y="484.5"/>
         </scene>
-        <!--EnumTool-->
+        <!--Random String-->
         <scene sceneID="9xu-He-giz">
             <objects>
-                <viewController title="EnumTool" id="ltW-Gw-qx8" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="Tux-pj-J3j">
+                <viewController title="Random String" id="ltW-Gw-qx8" sceneMemberID="viewController">
+                    <view key="view" id="Tux-pj-J3j">
                         <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b4X-eg-qNH">
-                                <rect key="frame" x="18" y="20" width="621" height="80"/>
+                                <rect key="frame" x="18" y="20" width="614" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="NTl-PT-O9D"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gpA-Sx-vXA"/>
@@ -117,52 +119,33 @@
                                     <font key="font" metaFont="system"/>
                                     <string key="title">
 I can
-Enum -&gt; Switch case
-Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</string>
+Random String -&gt; Create Random String
+Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qu1-Pl-YpW">
-                                <rect key="frame" x="18" y="120" width="286" height="260"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="O84-C4-lA5">
+                                <rect key="frame" x="18" y="120" width="283" height="260"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="NSString *aStr = @&quot;&quot;;" id="O84-C4-lA5">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">enum CSConnectionState {
-    CSConnectionStateDisconnected,
-    CSConnectionStateConnecting,
-    CSConnectionStateConnected,
-};
-</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHs-Yy-bZU">
-                                <rect key="frame" x="353" y="120" width="286" height="260"/>
+                                <rect key="frame" x="350" y="120" width="282" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="vge-30-RtV"/>
                                 </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="k4f-HE-Ig0">
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="NSString *aStr = @&quot;Random String...&quot;;" id="k4f-HE-Ig0">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">        switch (&lt;#expression#&gt;) {
-            case CSConnectionStateDisconnected:
-                &lt;#statements#&gt;
-                break;
-            case CSConnectionStateConnecting:
-                &lt;#statements#&gt;
-                break;
-            case CSConnectionStateConnected:
-                &lt;#statements#&gt;
-                break;
-            default:
-                break;
-        }</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zec-1X-58J">
-                                <rect key="frame" x="310" y="242" width="37" height="17"/>
+                                <rect key="frame" x="307" y="242" width="37" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="3yC-dx-P0U"/>
                                     <constraint firstAttribute="height" constant="17" id="ijQ-gV-XMx"/>
@@ -193,7 +176,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                 </viewController>
                 <customObject id="rip-Tn-aV0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355" y="484"/>
+            <point key="canvasLocation" x="1355" y="1080"/>
         </scene>
         <!--ColorTool-->
         <scene sceneID="hIz-AP-VOD">
@@ -349,6 +332,102 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="620" y="1047"/>
+        </scene>
+        <!--EnumTool-->
+        <scene sceneID="mIp-jf-Awf">
+            <objects>
+                <viewController title="EnumTool" id="WFL-mf-LJ8" sceneMemberID="viewController">
+                    <view key="view" misplaced="YES" id="c9W-s5-B38">
+                        <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-90-UNB">
+                                <rect key="frame" x="18" y="20" width="621" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Fdh-MS-WOX"/>
+                                    <constraint firstAttribute="height" constant="80" id="pNK-Zk-n4W"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="CsG-ie-d7c">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">
+I can
+Enum -&gt; Switch case
+Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U9l-eW-MUL">
+                                <rect key="frame" x="18" y="120" width="286" height="260"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="IW3-vH-iJ3">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">enum CSConnectionState {
+    CSConnectionStateDisconnected,
+    CSConnectionStateConnecting,
+    CSConnectionStateConnected,
+};
+</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-Pe-l9b">
+                                <rect key="frame" x="353" y="120" width="286" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="R87-zx-25X"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="Y54-Vf-pVp">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">        switch (&lt;#expression#&gt;) {
+            case CSConnectionStateDisconnected:
+                &lt;#statements#&gt;
+                break;
+            case CSConnectionStateConnecting:
+                &lt;#statements#&gt;
+                break;
+            case CSConnectionStateConnected:
+                &lt;#statements#&gt;
+                break;
+            default:
+                break;
+        }</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yV6-my-Npi">
+                                <rect key="frame" x="310" y="242" width="37" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="b36-Ts-Vai"/>
+                                    <constraint firstAttribute="width" constant="33" id="fD4-s7-qVb"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="-&gt;" id="T8M-cc-ozG">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NaS-Pe-l9b" firstAttribute="top" secondItem="c9W-s5-B38" secondAttribute="top" constant="20" id="4wU-IS-w7J"/>
+                            <constraint firstAttribute="trailing" secondItem="6vw-90-UNB" secondAttribute="trailing" constant="20" id="4xj-Yf-L9N"/>
+                            <constraint firstAttribute="bottom" secondItem="6vw-90-UNB" secondAttribute="bottom" constant="20" id="8OT-lP-rRl"/>
+                            <constraint firstItem="U9l-eW-MUL" firstAttribute="leading" secondItem="c9W-s5-B38" secondAttribute="leading" constant="20" id="JUd-jQ-8l5"/>
+                            <constraint firstItem="U9l-eW-MUL" firstAttribute="top" secondItem="c9W-s5-B38" secondAttribute="top" constant="20" id="Jsc-g5-RLA"/>
+                            <constraint firstItem="NaS-Pe-l9b" firstAttribute="leading" secondItem="yV6-my-Npi" secondAttribute="trailing" constant="10" id="Ofb-sB-xxe"/>
+                            <constraint firstItem="yV6-my-Npi" firstAttribute="leading" secondItem="U9l-eW-MUL" secondAttribute="trailing" constant="10" id="Ujb-de-62q"/>
+                            <constraint firstAttribute="trailing" secondItem="NaS-Pe-l9b" secondAttribute="trailing" constant="20" id="XPb-mm-cN1"/>
+                            <constraint firstItem="NaS-Pe-l9b" firstAttribute="width" secondItem="U9l-eW-MUL" secondAttribute="width" id="bgK-Mc-cdY"/>
+                            <constraint firstItem="6vw-90-UNB" firstAttribute="leading" secondItem="c9W-s5-B38" secondAttribute="leading" constant="20" id="dId-Sg-D42"/>
+                            <constraint firstItem="6vw-90-UNB" firstAttribute="top" secondItem="U9l-eW-MUL" secondAttribute="bottom" constant="20" id="f7D-mU-TeN"/>
+                            <constraint firstItem="yV6-my-Npi" firstAttribute="centerY" secondItem="NaS-Pe-l9b" secondAttribute="centerY" id="fN5-ES-Wo0"/>
+                            <constraint firstItem="6vw-90-UNB" firstAttribute="top" secondItem="NaS-Pe-l9b" secondAttribute="bottom" constant="20" id="wsw-TA-8lP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="VW5-QY-hYg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="484"/>
         </scene>
     </scenes>
 </document>

@@ -9,6 +9,7 @@
 #import "SourceEditorCommand.h"
 #import "ColorStatement.h"
 #import "EnumSwitchStatement.h"
+#import "RandomString.h"
 
 @implementation SourceEditorCommand
 
@@ -23,6 +24,8 @@
         [ColorStatement colorHexConvertRGBA:invocation type:idColorConvertCustom1];
     }else if ([identifier hasSuffix:idEnum2Switch]) {
         [EnumSwitchStatement enumToSwitch:invocation];
+    }else if ([identifier hasSuffix:idRandomString]) {
+        [RandomString randomTheString:invocation];
     }
     completionHandler(nil);
 }

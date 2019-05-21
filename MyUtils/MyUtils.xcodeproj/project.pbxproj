@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C32293DCCE00EFA445 /* RandomString.m */; };
+		2B6AB0C72293E2FA00EFA445 /* JaneEyre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */; };
+		2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
 		FC4CBF3621E5CF5B002F29A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3521E5CF5B002F29A6 /* ViewController.m */; };
 		FC4CBF3821E5CF5D002F29A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */; };
@@ -47,6 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B6AB0C22293DCCE00EFA445 /* RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomString.h; sourceTree = "<group>"; };
+		2B6AB0C32293DCCE00EFA445 /* RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomString.m; sourceTree = "<group>"; };
+		2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JaneEyre.txt; sourceTree = "<group>"; };
+		2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theFurtherAdventuresOfRobinsonCrusoe.txt; sourceTree = "<group>"; };
 		FC4CBF2E21E5CF5B002F29A6 /* MyUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B6AB0C92293E30100EFA445 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */,
+				2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
 		FC4CBF2521E5CF5B002F29A6 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,9 @@
 				FC4CBF6121E5D7A5002F29A6 /* ColorStatement.m */,
 				FCF216152243777D008D141E /* EnumSwitchStatement.h */,
 				FCF216162243777D008D141E /* EnumSwitchStatement.m */,
+				2B6AB0C22293DCCE00EFA445 /* RandomString.h */,
+				2B6AB0C32293DCCE00EFA445 /* RandomString.m */,
+				2B6AB0C92293E30100EFA445 /* Books */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
 			);
@@ -243,6 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */,
+				2B6AB0C72293E2FA00EFA445 /* JaneEyre.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF216172243777D008D141E /* EnumSwitchStatement.m in Sources */,
+				2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,

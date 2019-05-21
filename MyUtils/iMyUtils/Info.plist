@@ -52,6 +52,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Enum To Switch</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).RandomString</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Random String</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
