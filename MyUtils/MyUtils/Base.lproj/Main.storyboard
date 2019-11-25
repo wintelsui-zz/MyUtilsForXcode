@@ -23,6 +23,13 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="GitHub Open Source Code" id="usT-nB-lYy">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openGithub:" target="Voe-Tx-rLC" id="Hcr-iN-6WR"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="tRt-FH-GPR"/>
                                         <menuItem title="Quit MyUtils for Xcode" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
@@ -76,7 +83,7 @@
         <!--Tab View Controller-->
         <scene sceneID="VMW-Y8-1uW">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="GY6-eo-VEV" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="3" id="GY6-eo-VEV" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="MFg-4H-QIg"/>
                         <tabViewItem id="pDR-hN-2RD"/>
@@ -158,6 +165,16 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-jA-Rft">
+                                <rect key="frame" x="146" y="-1" width="359" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WK5-di-Fgp"/>
+                                </constraints>
+                                <buttonCell key="cell" type="inline" title="Open Source ：https://github.com/wintelsui/MyUtilsForXcode" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oAV-Nj-eEr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YHs-Yy-bZU" firstAttribute="leading" secondItem="zec-1X-58J" secondAttribute="trailing" constant="10" id="5ZS-py-o8x"/>
@@ -165,12 +182,14 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                             <constraint firstAttribute="trailing" secondItem="b4X-eg-qNH" secondAttribute="trailing" constant="20" id="97Z-d1-b2b"/>
                             <constraint firstItem="b4X-eg-qNH" firstAttribute="top" secondItem="Qu1-Pl-YpW" secondAttribute="bottom" constant="20" id="AUZ-yp-UM0"/>
                             <constraint firstItem="Qu1-Pl-YpW" firstAttribute="leading" secondItem="Tux-pj-J3j" secondAttribute="leading" constant="20" id="FF3-zT-nP5"/>
+                            <constraint firstItem="Quk-jA-Rft" firstAttribute="centerX" secondItem="Tux-pj-J3j" secondAttribute="centerX" id="Fud-Or-FOP"/>
                             <constraint firstAttribute="trailing" secondItem="YHs-Yy-bZU" secondAttribute="trailing" constant="20" id="UoE-li-Yvh"/>
                             <constraint firstItem="zec-1X-58J" firstAttribute="leading" secondItem="Qu1-Pl-YpW" secondAttribute="trailing" constant="10" id="apQ-mZ-M0H"/>
                             <constraint firstItem="b4X-eg-qNH" firstAttribute="top" secondItem="YHs-Yy-bZU" secondAttribute="bottom" constant="20" id="blE-ol-7Ai"/>
                             <constraint firstItem="zec-1X-58J" firstAttribute="centerY" secondItem="YHs-Yy-bZU" secondAttribute="centerY" id="dfd-zW-rpD"/>
                             <constraint firstItem="YHs-Yy-bZU" firstAttribute="top" secondItem="Tux-pj-J3j" secondAttribute="top" constant="20" id="fCI-hM-V3k"/>
                             <constraint firstItem="YHs-Yy-bZU" firstAttribute="width" secondItem="Qu1-Pl-YpW" secondAttribute="width" id="g9P-pp-NsU"/>
+                            <constraint firstAttribute="bottom" secondItem="Quk-jA-Rft" secondAttribute="bottom" id="heV-Ib-ito"/>
                             <constraint firstItem="Qu1-Pl-YpW" firstAttribute="top" secondItem="Tux-pj-J3j" secondAttribute="top" constant="20" id="wqp-hz-vBh"/>
                             <constraint firstItem="b4X-eg-qNH" firstAttribute="leading" secondItem="Tux-pj-J3j" secondAttribute="leading" constant="20" id="yIn-Ej-0gV"/>
                         </constraints>
@@ -299,11 +318,22 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lR7-YY-vht">
+                                <rect key="frame" x="146" y="-1" width="359" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yXx-5f-ekD"/>
+                                </constraints>
+                                <buttonCell key="cell" type="inline" title="Open Source ：https://github.com/wintelsui/MyUtilsForXcode" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oFd-j8-udJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ey6-ga-Ji9" firstAttribute="centerY" secondItem="qeb-1Z-REH" secondAttribute="centerY" id="11g-zc-4gp"/>
                             <constraint firstItem="bFn-Mz-EuT" firstAttribute="top" secondItem="QlJ-5l-MBb" secondAttribute="bottom" constant="10" id="3cl-sg-YYZ"/>
                             <constraint firstAttribute="trailing" secondItem="ey6-ga-Ji9" secondAttribute="trailing" constant="20" id="4GJ-Ao-4kr"/>
+                            <constraint firstAttribute="bottom" secondItem="lR7-YY-vht" secondAttribute="bottom" id="75g-eQ-t9M"/>
                             <constraint firstItem="qeb-1Z-REH" firstAttribute="leading" secondItem="cSz-DT-G9l" secondAttribute="trailing" constant="5" id="9Nr-tV-CTc"/>
                             <constraint firstAttribute="trailing" secondItem="cNu-Zj-6OY" secondAttribute="trailing" constant="20" id="ARA-CU-I2b"/>
                             <constraint firstItem="cSz-DT-G9l" firstAttribute="top" secondItem="bFn-Mz-EuT" secondAttribute="bottom" constant="10" id="BMh-QI-Uqz"/>
@@ -316,6 +346,7 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
                             <constraint firstItem="qeb-1Z-REH" firstAttribute="centerY" secondItem="cSz-DT-G9l" secondAttribute="centerY" id="VRJ-N7-INQ"/>
                             <constraint firstAttribute="bottom" secondItem="cNu-Zj-6OY" secondAttribute="bottom" constant="20" id="Vw0-Mc-PVK"/>
                             <constraint firstItem="QlJ-5l-MBb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="WTD-MH-xnf"/>
+                            <constraint firstItem="lR7-YY-vht" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="dGf-LL-HY1"/>
                             <constraint firstItem="ey6-ga-Ji9" firstAttribute="leading" secondItem="qeb-1Z-REH" secondAttribute="trailing" constant="5" id="hPF-0A-aNf"/>
                             <constraint firstItem="HVP-hc-kIG" firstAttribute="centerY" secondItem="QlJ-5l-MBb" secondAttribute="centerY" id="kK9-1m-qhq"/>
                             <constraint firstAttribute="trailing" secondItem="LYI-fd-Sva" secondAttribute="trailing" constant="20" id="ncU-Ny-IXp"/>
@@ -339,8 +370,8 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
         <scene sceneID="mIp-jf-Awf">
             <objects>
                 <viewController title="EnumTool" id="WFL-mf-LJ8" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="c9W-s5-B38">
-                        <rect key="frame" x="0.0" y="0.0" width="650" height="400"/>
+                    <view key="view" id="c9W-s5-B38">
+                        <rect key="frame" x="0.0" y="0.0" width="657" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-90-UNB">
@@ -409,6 +440,16 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-c6-UP2">
+                                <rect key="frame" x="149" y="-1" width="359" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WVN-aw-Nzw"/>
+                                </constraints>
+                                <buttonCell key="cell" type="inline" title="Open Source ：https://github.com/wintelsui/MyUtilsForXcode" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2DK-yO-da3">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="NaS-Pe-l9b" firstAttribute="top" secondItem="c9W-s5-B38" secondAttribute="top" constant="20" id="4wU-IS-w7J"/>
@@ -417,12 +458,14 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                             <constraint firstItem="U9l-eW-MUL" firstAttribute="leading" secondItem="c9W-s5-B38" secondAttribute="leading" constant="20" id="JUd-jQ-8l5"/>
                             <constraint firstItem="U9l-eW-MUL" firstAttribute="top" secondItem="c9W-s5-B38" secondAttribute="top" constant="20" id="Jsc-g5-RLA"/>
                             <constraint firstItem="NaS-Pe-l9b" firstAttribute="leading" secondItem="yV6-my-Npi" secondAttribute="trailing" constant="10" id="Ofb-sB-xxe"/>
+                            <constraint firstAttribute="bottom" secondItem="2Qy-c6-UP2" secondAttribute="bottom" id="PzX-WH-rNr"/>
                             <constraint firstItem="yV6-my-Npi" firstAttribute="leading" secondItem="U9l-eW-MUL" secondAttribute="trailing" constant="10" id="Ujb-de-62q"/>
                             <constraint firstAttribute="trailing" secondItem="NaS-Pe-l9b" secondAttribute="trailing" constant="20" id="XPb-mm-cN1"/>
                             <constraint firstItem="NaS-Pe-l9b" firstAttribute="width" secondItem="U9l-eW-MUL" secondAttribute="width" id="bgK-Mc-cdY"/>
                             <constraint firstItem="6vw-90-UNB" firstAttribute="leading" secondItem="c9W-s5-B38" secondAttribute="leading" constant="20" id="dId-Sg-D42"/>
                             <constraint firstItem="6vw-90-UNB" firstAttribute="top" secondItem="U9l-eW-MUL" secondAttribute="bottom" constant="20" id="f7D-mU-TeN"/>
                             <constraint firstItem="yV6-my-Npi" firstAttribute="centerY" secondItem="NaS-Pe-l9b" secondAttribute="centerY" id="fN5-ES-Wo0"/>
+                            <constraint firstItem="2Qy-c6-UP2" firstAttribute="centerX" secondItem="c9W-s5-B38" secondAttribute="centerX" id="jnT-GL-f3R"/>
                             <constraint firstItem="6vw-90-UNB" firstAttribute="top" secondItem="NaS-Pe-l9b" secondAttribute="bottom" constant="20" id="wsw-TA-8lP"/>
                         </constraints>
                     </view>

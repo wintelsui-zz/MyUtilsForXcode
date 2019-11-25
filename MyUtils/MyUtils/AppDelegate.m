@@ -29,6 +29,7 @@
 //    NSLog(@"codes:%@",@"applicationShouldTerminateAfterLastWindowClosed");
     return YES;
 }
-
-
+- (IBAction)openGithub:(id)sender {
+     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/wintelsui/MyUtilsForXcode"]];
+}
 @end
