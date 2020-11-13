@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D4BA724CFBD4000DAB57B /* StringFormat.m */; };
 		2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C32293DCCE00EFA445 /* RandomString.m */; };
 		2B6AB0C72293E2FA00EFA445 /* JaneEyre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */; };
 		2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */; };
@@ -53,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B3D4BA724CFBD4000DAB57B /* StringFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringFormat.m; sourceTree = "<group>"; };
+		2B3D4BA824CFBD4000DAB57B /* StringFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringFormat.h; sourceTree = "<group>"; };
 		2B6AB0C22293DCCE00EFA445 /* RandomString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomString.h; sourceTree = "<group>"; };
 		2B6AB0C32293DCCE00EFA445 /* RandomString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomString.m; sourceTree = "<group>"; };
 		2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JaneEyre.txt; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				FCF216162243777D008D141E /* EnumSwitchStatement.m */,
 				2B6AB0C22293DCCE00EFA445 /* RandomString.h */,
 				2B6AB0C32293DCCE00EFA445 /* RandomString.m */,
+				2B3D4BA824CFBD4000DAB57B /* StringFormat.h */,
+				2B3D4BA724CFBD4000DAB57B /* StringFormat.m */,
 				2B6AB0C92293E30100EFA445 /* Books */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
@@ -246,6 +251,9 @@
 		FC4CBF2621E5CF5B002F29A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = wintelsui;
 				TargetAttributes = {
@@ -359,6 +367,7 @@
 			files = (
 				FCF216172243777D008D141E /* EnumSwitchStatement.m in Sources */,
 				2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */,
+				2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
@@ -505,7 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyUtils/MyUtils.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.3.1;
@@ -515,7 +524,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyUtils/MyUtils.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.3.1;
@@ -539,7 +548,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +559,7 @@
 		FC4CBF5A21E5CF9A002F29A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = iMyUtils/iMyUtils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -571,6 +581,7 @@
 		FC4CBF5B21E5CF9A002F29A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = iMyUtils/iMyUtils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

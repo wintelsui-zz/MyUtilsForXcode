@@ -10,6 +10,7 @@
 #import "ColorStatement.h"
 #import "EnumSwitchStatement.h"
 #import "RandomString.h"
+#import "StringFormat.h"
 
 @implementation SourceEditorCommand
 
@@ -26,7 +27,16 @@
         [EnumSwitchStatement enumToSwitch:invocation];
     }else if ([identifier hasSuffix:idRandomString]) {
         [RandomString randomTheString:invocation];
+    }else if ([identifier hasSuffix:idStringFormat2lowerCapitalize]) {
+        [StringFormat stringFormat:invocation type:idStringFormat2lowerCapitalize];
+    }else if ([identifier hasSuffix:idStringFormat2Capitalize]) {
+        [StringFormat stringFormat:invocation type:idStringFormat2Capitalize];
+    }else if ([identifier hasSuffix:idStringFormat2UpperCamel]) {
+        [StringFormat stringFormat:invocation type:idStringFormat2UpperCamel];
+    }else if ([identifier hasSuffix:idStringFormat2lowercamel]) {
+        [StringFormat stringFormat:invocation type:idStringFormat2lowercamel];
     }
+    
     completionHandler(nil);
 }
 

@@ -60,6 +60,38 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Random String</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2lowerCapitalize</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>String format 2 &apos;lowerCapitalize&apos;, no space</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2Capitalize</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>String format 2 &apos;CapitalizeCapitalize&apos;, no space</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2a_Boy</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>String format 2 &apos;Upper Camel&apos;</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2lowercamel</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>String format 2 &apos;lower camel&apos;</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>
