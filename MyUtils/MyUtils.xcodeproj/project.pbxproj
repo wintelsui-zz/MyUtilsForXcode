@@ -14,6 +14,8 @@
 		2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */; };
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
 		3AFA5ADC914817C16416AD5B /* Pods_MyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */; };
+		D23A1B3E25E8D40100AE6B1F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
+		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
 		FC4CBF3621E5CF5B002F29A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3521E5CF5B002F29A6 /* ViewController.m */; };
 		FC4CBF3821E5CF5D002F29A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */; };
@@ -66,6 +68,9 @@
 		2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesBuilderViewModel.m; sourceTree = "<group>"; };
 		4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84202739FBE49DA0C07A6389 /* Pods-MyUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.release.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.release.xcconfig"; sourceTree = "<group>"; };
+		D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
+		D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
 		F8784A7C091E410ADEAD2FC9 /* Pods-MyUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.debug.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4CBF2E21E5CF5B002F29A6 /* MyUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4CBF4C21E5CF9A002F29A6 /* Cocoa.framework in Frameworks */,
+				D23A1B3E25E8D40100AE6B1F /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +170,8 @@
 				2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */,
 				2BAAD114238AD56F00581787 /* ResourcesBuilderViewModel.h */,
 				2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */,
+				D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */,
+				D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */,
 				FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */,
 				FC4CBF3921E5CF5D002F29A6 /* Main.storyboard */,
 				FC4CBF3C21E5CF5D002F29A6 /* Info.plist */,
@@ -176,6 +184,7 @@
 		FC4CBF4A21E5CF9A002F29A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */,
 				FC4CBF4B21E5CF9A002F29A6 /* Cocoa.framework */,
 				4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */,
 			);
@@ -358,6 +367,7 @@
 				2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
 				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
+				D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

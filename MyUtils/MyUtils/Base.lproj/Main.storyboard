@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -166,7 +166,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-jA-Rft">
-                                <rect key="frame" x="146" y="-1" width="359" height="22"/>
+                                <rect key="frame" x="152" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WK5-di-Fgp"/>
                                 </constraints>
@@ -270,7 +270,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ey6-ga-Ji9">
-                                <rect key="frame" x="554" y="270" width="82" height="32"/>
+                                <rect key="frame" x="553" y="270" width="84" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="8oB-gl-0t5"/>
                                 </constraints>
@@ -283,7 +283,7 @@ Use：Select Number Or None Code Then Xcode - Editor - iMyTools - Random String<
                                 </connections>
                             </button>
                             <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-hc-kIG">
-                                <rect key="frame" x="494" y="348" width="138" height="24"/>
+                                <rect key="frame" x="492" y="348" width="140" height="24"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="RyJ-1c-7Y6">
                                     <font key="font" metaFont="system"/>
                                     <segments>
@@ -319,7 +319,7 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lR7-YY-vht">
-                                <rect key="frame" x="146" y="-1" width="359" height="22"/>
+                                <rect key="frame" x="152" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="yXx-5f-ekD"/>
                                 </constraints>
@@ -441,7 +441,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-c6-UP2">
-                                <rect key="frame" x="149" y="-1" width="359" height="22"/>
+                                <rect key="frame" x="156" y="0.0" width="346" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WVN-aw-Nzw"/>
                                 </constraints>
@@ -483,7 +483,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GB8-5p-B2T">
-                                <rect key="frame" x="279" y="13" width="92" height="41"/>
+                                <rect key="frame" x="278" y="13" width="94" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Axb-Mp-yQ2"/>
                                     <constraint firstAttribute="width" constant="80" id="VED-Di-lO5"/>
@@ -507,7 +507,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                 <rect key="frame" x="0.0" y="105" width="650" height="170"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tMP-oa-JkP">
-                                        <rect key="frame" x="96" y="14" width="54" height="25"/>
+                                        <rect key="frame" x="96" y="15" width="52" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="k5r-bz-Pou"/>
                                             <constraint firstAttribute="width" constant="50" id="vr3-PL-SJJ"/>
@@ -521,7 +521,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-Ob-oz4">
-                                        <rect key="frame" x="171" y="15" width="49" height="24"/>
+                                        <rect key="frame" x="171" y="16" width="47" height="22"/>
                                         <buttonCell key="cell" type="check" title="@2x" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FLD-cT-NxY">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -531,7 +531,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y7R-L6-uVW">
-                                        <rect key="frame" x="241" y="14" width="49" height="25"/>
+                                        <rect key="frame" x="241" y="15" width="47" height="23"/>
                                         <buttonCell key="cell" type="check" title="@3x" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="vLP-4Y-iCB">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -553,14 +553,14 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="bZl-ur-Df6"/>
                                         </constraints>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please select “output folder” path" bezelStyle="round" id="XdH-Zw-jqS">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please select “output folder” path" bezelStyle="round" id="XdH-Zw-jqS">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-7f-jPb">
-                                        <rect key="frame" x="96" y="96" width="124" height="24"/>
+                                        <rect key="frame" x="96" y="97" width="124" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Pyq-MG-zup"/>
                                             <constraint firstAttribute="width" constant="120" id="pFA-4G-PdU"/>
@@ -590,7 +590,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="2hT-2x-x25"/>
                                         </constraints>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please select “input folder” path" bezelStyle="round" id="0Ax-78-Cht">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please select “input folder” path" bezelStyle="round" id="0Ax-78-Cht">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -613,7 +613,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C4Q-Hx-b8h">
-                                        <rect key="frame" x="564" y="132" width="72" height="32"/>
+                                        <rect key="frame" x="563" y="132" width="74" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="naF-uN-0sq"/>
                                             <constraint firstAttribute="height" constant="21" id="zVF-Ya-oxp"/>
@@ -627,7 +627,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNq-kE-sx5">
-                                        <rect key="frame" x="529" y="50" width="42" height="32"/>
+                                        <rect key="frame" x="532" y="54" width="36" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="7C9-0N-gAf"/>
                                             <constraint firstAttribute="width" constant="30" id="eUO-C7-tPT"/>
@@ -641,7 +641,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PxU-Mc-kDM">
-                                        <rect key="frame" x="564" y="50" width="72" height="32"/>
+                                        <rect key="frame" x="563" y="50" width="74" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="i7Z-HS-eWD"/>
                                             <constraint firstAttribute="height" constant="21" id="p1J-j7-k9m"/>
@@ -655,7 +655,7 @@ Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch</stri
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g4M-h1-k4e">
-                                        <rect key="frame" x="529" y="132" width="42" height="32"/>
+                                        <rect key="frame" x="532" y="136" width="36" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="SgW-gb-MYs"/>
                                             <constraint firstAttribute="height" constant="21" id="dOl-c7-G7T"/>

@@ -8,6 +8,7 @@
 
 #import "ResourcesBuilderViewModel.h"
 #import <CoreImage/CoreImage.h>
+#import "NSImage+MGCropExtensions.h"
 
 @interface ResourcesBuilderViewModel ()
 
@@ -38,7 +39,7 @@
     _createImage3 = YES;
     
     self.validStartSignal = [[RACSignal
-                              combineLatest:@[ RACObserve(self, inputFolder), RACObserve(self, outputFolder)]
+                              combineLatest:@[RACObserve(self, inputFolder), RACObserve(self, outputFolder)]
                               reduce:^(NSString *inputFolder, NSString *outputFolder) {
                                     return @(outputFolder.length > 0 && outputFolder.length > 0);
                             }]distinctUntilChanged];
@@ -206,15 +207,28 @@
 - (void)saveZoomNSImage:(NSImage *)originalImage sizeOriginal:(CGSize)sizeOriginal outputType:(ResourcesSizeType)outputType toPath:(NSString *)filePath{
     if (originalImage && filePath) {
         
-        CGSize sizeNew = CGSizeMake(sizeOriginal.width * (outputType + 1.0) / (self.inputType + 1.0), sizeOriginal.height * (outputType + 1.0) / (self.inputType + 1.0));
-        
-//        [ResourcesBuilderViewModel resizeImage:originalImage toSize:sizeNew saveTo:filePath];
-        NSImage *imageNew = [ResourcesBuilderViewModel resizeImage:originalImage toSize:sizeNew isPixels:YES];
-
-        NSData *imageData = [imageNew TIFFRepresentation];
-        if (imageData) {
-            [imageData writeToFile:filePath atomically:YES];
+        if (NO) {
+            CGSize sizeNew = CGSizeMake(sizeOriginal.width * (outputType + 1.0) / (self.inputType + 1.0), sizeOriginal.height * (outputType + 1.0) / (self.inputType + 1.0));
+            
+                //        [ResourcesBuilderViewModel resizeImage:originalImage toSize:sizeNew saveTo:filePath];
+            NSImage *imageNew = [ResourcesBuilderViewModel resizeImage:originalImage toSize:sizeNew isPixels:YES];
+            NSData *imageData = [imageNew TIFFRepresentation];
+            if (imageData) {
+                [imageData writeToFile:filePath atomically:YES];
+            }
+        }else{
+            NSSize targetSize = NSMakeSize(sizeOriginal.width * (outputType) / (self.inputType), sizeOriginal.height * (outputType) / (self.inputType));
+            NSImage* resultImg = [originalImage imageToFitSize:targetSize method:MGImageResizeScale];
+            
+            CGImageRef cgRef = [resultImg CGImageForProposedRect:NULL  context:nil  hints:nil];
+            NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
+            [newRep setSize:targetSize];
+            NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+            [pngData writeToFile:filePath atomically:YES];
         }
+        
+
+        
     }
 }
 
