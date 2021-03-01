@@ -14,8 +14,9 @@
 		2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */; };
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
 		3AFA5ADC914817C16416AD5B /* Pods_MyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */; };
-		D23A1B3E25E8D40100AE6B1F /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
 		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2E8EBCE25EC78E400F69FF2 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
+		D2E8EBCF25EC78E400F69FF2 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
 		FC4CBF3621E5CF5B002F29A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3521E5CF5B002F29A6 /* ViewController.m */; };
 		FC4CBF3821E5CF5D002F29A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */; };
@@ -42,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D2E8EBD025EC78E400F69FF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D2E8EBCF25EC78E400F69FF2 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC4CBF5C21E5CF9A002F29A6 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4CBF4C21E5CF9A002F29A6 /* Cocoa.framework in Frameworks */,
-				D23A1B3E25E8D40100AE6B1F /* XcodeKit.framework in Frameworks */,
+				D2E8EBCE25EC78E400F69FF2 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +256,7 @@
 				FC4CBF4521E5CF9A002F29A6 /* Sources */,
 				FC4CBF4621E5CF9A002F29A6 /* Frameworks */,
 				FC4CBF4721E5CF9A002F29A6 /* Resources */,
+				D2E8EBD025EC78E400F69FF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

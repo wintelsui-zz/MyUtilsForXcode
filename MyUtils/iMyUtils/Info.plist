@@ -80,7 +80,7 @@
 					<key>XCSourceEditorCommandClassName</key>
 					<string>SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2a_Boy</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).StringFormat2UpperCamel</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>String format 2 'Upper Camel'</string>
 				</dict>
