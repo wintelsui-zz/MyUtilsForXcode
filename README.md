@@ -14,6 +14,15 @@ Use：Select "#FFFFFF" Then Xcode - Editor - iMyTools - Color Converter/Color Co
 Enum -> Switch case
 Use：Select All Enum Code Then Xcode - Editor - iMyTools - Enum To Switch
 
+3:
+Random String
+
+4:
+png -> @2x.png @3x.png
+
+5:
+String Format
+
 -------
 ![img](https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/21/d0/6e/21d06e33-f98c-224b-ff98-797cf515c558/pr_source.png/434x0w.png)
 
