@@ -15,6 +15,9 @@
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
 		3AFA5ADC914817C16416AD5B /* Pods_MyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */; };
 		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
+		D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
+		D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */; };
 		D2E8EBCE25EC78E400F69FF2 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
 		D2E8EBCF25EC78E400F69FF2 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
@@ -83,6 +86,10 @@
 		D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
 		D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
+		D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTranslationEngine.h; sourceTree = "<group>"; };
+		D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTranslationEngine.m; sourceTree = "<group>"; };
+		D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleTranslationEngine.h; sourceTree = "<group>"; };
+		D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleTranslationEngine.m; sourceTree = "<group>"; };
 		F8784A7C091E410ADEAD2FC9 /* Pods-MyUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.debug.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4CBF2E21E5CF5B002F29A6 /* MyUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +147,17 @@
 			path = Books;
 			sourceTree = "<group>";
 		};
+		D2AB0FCB25FFA7680049F09E /* TranslationEngine */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */,
+				D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */,
+				D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */,
+				D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */,
+			);
+			path = TranslationEngine;
+			sourceTree = "<group>";
+		};
 		E85F309A114AA1E58D5808D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +207,7 @@
 				FC4CBF3C21E5CF5D002F29A6 /* Info.plist */,
 				FC4CBF3D21E5CF5D002F29A6 /* main.m */,
 				FC4CBF3F21E5CF5D002F29A6 /* MyUtils.entitlements */,
+				D2AB0FCB25FFA7680049F09E /* TranslationEngine */,
 			);
 			path = MyUtils;
 			sourceTree = "<group>";
@@ -378,6 +397,8 @@
 				FC4CBF3E21E5CF5D002F29A6 /* main.m in Sources */,
 				2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */,
 				2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */,
+				D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */,
+				D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
 				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
 				D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */,
@@ -392,6 +413,7 @@
 				2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */,
 				2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
+				D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
 				FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */,
