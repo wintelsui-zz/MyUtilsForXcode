@@ -6,7 +6,7 @@
 //  Copyright © 2021 wintelsui. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "XTranslationEngine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

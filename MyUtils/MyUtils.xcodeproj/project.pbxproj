@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B39EE539F5F1C584F0C2F4 /* Pods_MyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1718736F34245692D2ABD5C /* Pods_MyUtils.framework */; };
 		2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D4BA724CFBD4000DAB57B /* StringFormat.m */; };
 		2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C32293DCCE00EFA445 /* RandomString.m */; };
 		2B6AB0C72293E2FA00EFA445 /* JaneEyre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C52293E2FA00EFA445 /* JaneEyre.txt */; };
 		2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */; };
 		2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */; };
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
-		3AFA5ADC914817C16416AD5B /* Pods_MyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */; };
+		D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */; };
+		D237447F26008808001D948F /* TranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D237447E26008808001D948F /* TranslatorViewController.m */; };
+		D2374485260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
+		D2374486260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
 		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
 		D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
@@ -81,8 +85,14 @@
 		2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesBuilderViewController.m; sourceTree = "<group>"; };
 		2BAAD114238AD56F00581787 /* ResourcesBuilderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesBuilderViewModel.h; sourceTree = "<group>"; };
 		2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesBuilderViewModel.m; sourceTree = "<group>"; };
-		4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84202739FBE49DA0C07A6389 /* Pods-MyUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.release.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.release.xcconfig"; sourceTree = "<group>"; };
+		C1718736F34245692D2ABD5C /* Pods_MyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2374478260083D2001D948F /* GoogleCNTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleCNTranslationEngine.h; sourceTree = "<group>"; };
+		D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCNTranslationEngine.m; sourceTree = "<group>"; };
+		D237447D26008808001D948F /* TranslatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslatorViewController.h; sourceTree = "<group>"; };
+		D237447E26008808001D948F /* TranslatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorViewController.m; sourceTree = "<group>"; };
+		D2374483260090A2001D948F /* JSONFighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONFighting.h; sourceTree = "<group>"; };
+		D2374484260090A2001D948F /* JSONFighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONFighting.m; sourceTree = "<group>"; };
 		D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
 		D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
@@ -122,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFA5ADC914817C16416AD5B /* Pods_MyUtils.framework in Frameworks */,
+				23B39EE539F5F1C584F0C2F4 /* Pods_MyUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,13 +157,24 @@
 			path = Books;
 			sourceTree = "<group>";
 		};
+		D2374482260090A2001D948F /* JSONFighting */ = {
+			isa = PBXGroup;
+			children = (
+				D2374483260090A2001D948F /* JSONFighting.h */,
+				D2374484260090A2001D948F /* JSONFighting.m */,
+			);
+			path = JSONFighting;
+			sourceTree = "<group>";
+		};
 		D2AB0FCB25FFA7680049F09E /* TranslationEngine */ = {
 			isa = PBXGroup;
 			children = (
-				D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */,
-				D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */,
+				D2374478260083D2001D948F /* GoogleCNTranslationEngine.h */,
+				D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */,
 				D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */,
 				D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */,
+				D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */,
+				D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */,
 			);
 			path = TranslationEngine;
 			sourceTree = "<group>";
@@ -190,10 +211,13 @@
 		FC4CBF3021E5CF5B002F29A6 /* MyUtils */ = {
 			isa = PBXGroup;
 			children = (
+				D2374482260090A2001D948F /* JSONFighting */,
 				FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */,
 				FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */,
 				FC4CBF3421E5CF5B002F29A6 /* ViewController.h */,
 				FC4CBF3521E5CF5B002F29A6 /* ViewController.m */,
+				D237447D26008808001D948F /* TranslatorViewController.h */,
+				D237447E26008808001D948F /* TranslatorViewController.m */,
 				FC76CAD921F9806300C7BA42 /* ColorStringSetting.h */,
 				FC76CADA21F9806300C7BA42 /* ColorStringSetting.m */,
 				2BAAD112238AD56E00581787 /* ResourcesBuilderViewController.h */,
@@ -217,7 +241,7 @@
 			children = (
 				D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */,
 				FC4CBF4B21E5CF9A002F29A6 /* Cocoa.framework */,
-				4A5B6D50022D874191C62033 /* Pods_MyUtils.framework */,
+				C1718736F34245692D2ABD5C /* Pods_MyUtils.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -256,7 +280,7 @@
 				FC4CBF2B21E5CF5B002F29A6 /* Frameworks */,
 				FC4CBF2C21E5CF5B002F29A6 /* Resources */,
 				FC4CBF5C21E5CF9A002F29A6 /* Embed App Extensions */,
-				98F14199C9ADBDD1AABA056D /* [CP] Embed Pods Frameworks */,
+				3EB00C8EF74213AC848CDCEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +371,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3EB00C8EF74213AC848CDCEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7E0DB0BC2995BAD75EBF499C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,23 +410,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98F14199C9ADBDD1AABA056D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyUtils/Pods-MyUtils-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -398,9 +422,12 @@
 				2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */,
 				2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */,
 				D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */,
+				D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */,
 				D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */,
+				D2374485260090A2001D948F /* JSONFighting.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
 				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
+				D237447F26008808001D948F /* TranslatorViewController.m in Sources */,
 				D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF216172243777D008D141E /* EnumSwitchStatement.m in Sources */,
+				D2374486260090A2001D948F /* JSONFighting.m in Sources */,
 				2B6AB0C42293DCCE00EFA445 /* RandomString.m in Sources */,
 				2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
