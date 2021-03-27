@@ -18,10 +18,13 @@
 		D237447F26008808001D948F /* TranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D237447E26008808001D948F /* TranslatorViewController.m */; };
 		D2374485260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
 		D2374486260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
+		D237448B2600DDE8001D948F /* Translator.m in Sources */ = {isa = PBXBuildFile; fileRef = D23744892600DDE8001D948F /* Translator.m */; };
 		D23A1B4525E8D97F00AE6B1F /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
 		D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */; };
 		D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */; };
+		D2E7D91D2600E52C0088C464 /* GoogleCNTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */; };
+		D2E7D91F2600E5310088C464 /* GoogleTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */; };
 		D2E8EBCE25EC78E400F69FF2 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
 		D2E8EBCF25EC78E400F69FF2 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
@@ -93,6 +96,8 @@
 		D237447E26008808001D948F /* TranslatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorViewController.m; sourceTree = "<group>"; };
 		D2374483260090A2001D948F /* JSONFighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONFighting.h; sourceTree = "<group>"; };
 		D2374484260090A2001D948F /* JSONFighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONFighting.m; sourceTree = "<group>"; };
+		D23744882600DDE8001D948F /* Translator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Translator.h; sourceTree = "<group>"; };
+		D23744892600DDE8001D948F /* Translator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Translator.m; sourceTree = "<group>"; };
 		D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		D23A1B4325E8D97F00AE6B1F /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
 		D23A1B4425E8D97F00AE6B1F /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
@@ -261,6 +266,8 @@
 				2B6AB0C32293DCCE00EFA445 /* RandomString.m */,
 				2B3D4BA824CFBD4000DAB57B /* StringFormat.h */,
 				2B3D4BA724CFBD4000DAB57B /* StringFormat.m */,
+				D23744882600DDE8001D948F /* Translator.h */,
+				D23744892600DDE8001D948F /* Translator.m */,
 				2B6AB0C92293E30100EFA445 /* Books */,
 				FC4CBF5421E5CF9A002F29A6 /* Info.plist */,
 				FC4CBF5521E5CF9A002F29A6 /* iMyUtils.entitlements */,
@@ -442,9 +449,12 @@
 				2B3D4BA924CFBD4000DAB57B /* StringFormat.m in Sources */,
 				FC4CBF5021E5CF9A002F29A6 /* SourceEditorExtension.m in Sources */,
 				D2AB0FC925FFA7400049F09E /* XTranslationEngine.m in Sources */,
+				D2E7D91D2600E52C0088C464 /* GoogleCNTranslationEngine.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
 				FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */,
+				D2E7D91F2600E5310088C464 /* GoogleTranslationEngine.m in Sources */,
+				D237448B2600DDE8001D948F /* Translator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +600,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEVELOPMENT_TEAM = ER82ALNC99;
 				INFOPLIST_FILE = MyUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -598,7 +608,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -614,7 +624,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEVELOPMENT_TEAM = ER82ALNC99;
 				INFOPLIST_FILE = MyUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +632,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -636,7 +646,7 @@
 				CODE_SIGN_ENTITLEMENTS = iMyUtils/iMyUtils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0.2019032101;
+				CURRENT_PROJECT_VERSION = 1.5.0.2021031601;
 				DEVELOPMENT_TEAM = ER82ALNC99;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iMyUtils/Info.plist;
@@ -646,7 +656,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils.iMyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -660,7 +670,7 @@
 				CODE_SIGN_ENTITLEMENTS = iMyUtils/iMyUtils.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.4.0.2019032101;
+				CURRENT_PROJECT_VERSION = 1.5.0.2021031601;
 				DEVELOPMENT_TEAM = ER82ALNC99;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iMyUtils/Info.plist;
@@ -670,7 +680,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sfs.MyUtils.iMyUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

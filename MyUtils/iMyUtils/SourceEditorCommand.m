@@ -11,6 +11,7 @@
 #import "EnumSwitchStatement.h"
 #import "RandomString.h"
 #import "StringFormat.h"
+#import "Translator.h"
 
 @implementation SourceEditorCommand
 
@@ -35,7 +36,12 @@
         [StringFormat stringFormat:invocation type:idStringFormat2UpperCamel];
     }else if ([identifier hasSuffix:idStringFormat2lowercamel]) {
         [StringFormat stringFormat:invocation type:idStringFormat2lowercamel];
+    }else if ([identifier hasSuffix:idTranslatorToFirst]) {
+        [Translator translate:invocation index:1];
+    }else if ([identifier hasSuffix:idTranslatorToSecond]) {
+        [Translator translate:invocation index:2];
     }
+    
     
     completionHandler(nil);
 }

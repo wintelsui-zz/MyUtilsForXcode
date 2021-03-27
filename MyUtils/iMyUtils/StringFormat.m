@@ -13,6 +13,7 @@ NSString * const idStringFormat2Capitalize = @"StringFormat2Capitalize";
 NSString * const idStringFormat2UpperCamel = @"StringFormat2UpperCamel";
 NSString * const idStringFormat2lowercamel = @"StringFormat2lowercamel";
 
+
 @implementation StringFormat
 
 + (void)stringFormat:(XCSourceEditorCommandInvocation *)invocation type:(NSString *)idtype{

@@ -92,6 +92,22 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>String format 2 'lower camel'</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).TranslatorToFirst</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Translate to first language</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).TranslatorToSecond</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Translate to second language</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

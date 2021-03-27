@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>com.sfs.MyUtils.group</string>
+		<string>group.com.sfs.MyUtils</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>

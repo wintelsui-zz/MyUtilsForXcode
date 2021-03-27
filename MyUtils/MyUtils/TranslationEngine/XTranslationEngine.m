@@ -135,7 +135,7 @@ static XTranslationEngine * _instance;
 }
 
 + (NSString *)chooseEngineName{
-    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"] stringForKey:kChooseEngineName];
+    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"] stringForKey:kChooseEngineName];
     if (config == nil || config.length == 0) {
         config = @"GoogleTranslationEngine";
     }
@@ -143,7 +143,7 @@ static XTranslationEngine * _instance;
 }
 
 + (NSString *)chooseFirstLangName{
-    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"] stringForKey:kChooseFirstLangName];
+    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"] stringForKey:kChooseFirstLangName];
     if (config == nil || config.length == 0) {
         config = @"english";
     }
@@ -151,7 +151,7 @@ static XTranslationEngine * _instance;
 }
 
 + (NSString *)chooseSecondLangName{
-    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"] stringForKey:kChooseSecondLangName];
+    NSString *config = [[[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"] stringForKey:kChooseSecondLangName];
     if (config == nil || config.length == 0) {
         config = @"chinese";
     }
@@ -159,19 +159,19 @@ static XTranslationEngine * _instance;
 }
 
 + (void)setChooseEngineName:(NSString *)engineName{
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"];
     [userDefaults setObject:engineName forKey:kChooseEngineName];
     [userDefaults synchronize];
 }
 + (void)setChooseFirstLangName:(NSString *)firstLangName{
     
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"];
     [userDefaults  setObject:firstLangName forKey:kChooseFirstLangName];
     [userDefaults synchronize];
 }
 + (void)setChooseSecondLangName:(NSString *)secondLangName{
     
-    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.sfs.MyUtils.group"];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.com.sfs.MyUtils"];
     [userDefaults  setObject:secondLangName forKey:kChooseSecondLangName];
     [userDefaults synchronize];
 }
