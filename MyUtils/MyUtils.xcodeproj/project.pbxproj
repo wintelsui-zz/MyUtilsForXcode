@@ -14,6 +14,7 @@
 		2B6AB0C82293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B6AB0C62293E2FA00EFA445 /* theFurtherAdventuresOfRobinsonCrusoe.txt */; };
 		2BAAD116238AD56F00581787 /* ResourcesBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD113238AD56E00581787 /* ResourcesBuilderViewController.m */; };
 		2BAAD117238AD56F00581787 /* ResourcesBuilderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */; };
+		D20661F12623D9A100FA19CB /* BingTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D20661F02623D9A100FA19CB /* BingTranslationEngine.m */; };
 		D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */; };
 		D237447F26008808001D948F /* TranslatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D237447E26008808001D948F /* TranslatorViewController.m */; };
 		D2374485260090A2001D948F /* JSONFighting.m in Sources */ = {isa = PBXBuildFile; fileRef = D2374484260090A2001D948F /* JSONFighting.m */; };
@@ -90,6 +91,8 @@
 		2BAAD115238AD56F00581787 /* ResourcesBuilderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesBuilderViewModel.m; sourceTree = "<group>"; };
 		84202739FBE49DA0C07A6389 /* Pods-MyUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.release.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.release.xcconfig"; sourceTree = "<group>"; };
 		C1718736F34245692D2ABD5C /* Pods_MyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20661EF2623D9A100FA19CB /* BingTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BingTranslationEngine.h; sourceTree = "<group>"; };
+		D20661F02623D9A100FA19CB /* BingTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingTranslationEngine.m; sourceTree = "<group>"; };
 		D2374478260083D2001D948F /* GoogleCNTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleCNTranslationEngine.h; sourceTree = "<group>"; };
 		D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCNTranslationEngine.m; sourceTree = "<group>"; };
 		D237447D26008808001D948F /* TranslatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslatorViewController.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				D2374479260083D2001D948F /* GoogleCNTranslationEngine.m */,
 				D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */,
 				D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */,
+				D20661EF2623D9A100FA19CB /* BingTranslationEngine.h */,
+				D20661F02623D9A100FA19CB /* BingTranslationEngine.m */,
 				D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */,
 				D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */,
 			);
@@ -432,6 +437,7 @@
 				D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */,
 				D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */,
 				D2374485260090A2001D948F /* JSONFighting.m in Sources */,
+				D20661F12623D9A100FA19CB /* BingTranslationEngine.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
 				FC76CADB21F9806300C7BA42 /* ColorStringSetting.m in Sources */,
 				D237447F26008808001D948F /* TranslatorViewController.m in Sources */,
