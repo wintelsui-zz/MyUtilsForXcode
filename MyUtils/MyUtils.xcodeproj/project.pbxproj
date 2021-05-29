@@ -28,6 +28,8 @@
 		D2E7D91F2600E5310088C464 /* GoogleTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */; };
 		D2E8EBCE25EC78E400F69FF2 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; };
 		D2E8EBCF25EC78E400F69FF2 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D23A1B3D25E8D40100AE6B1F /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2E9E1CC26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E9E1CB26628DF900A85C95 /* BaiduTranslationEngine.m */; };
+		D2E9E1CD26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E9E1CB26628DF900A85C95 /* BaiduTranslationEngine.m */; };
 		FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3221E5CF5B002F29A6 /* AppDelegate.m */; };
 		FC4CBF3621E5CF5B002F29A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4CBF3521E5CF5B002F29A6 /* ViewController.m */; };
 		FC4CBF3821E5CF5D002F29A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4CBF3721E5CF5D002F29A6 /* Assets.xcassets */; };
@@ -108,6 +110,8 @@
 		D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTranslationEngine.m; sourceTree = "<group>"; };
 		D2AB0FCC25FFA97E0049F09E /* GoogleTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleTranslationEngine.h; sourceTree = "<group>"; };
 		D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleTranslationEngine.m; sourceTree = "<group>"; };
+		D2E9E1CA26628DF900A85C95 /* BaiduTranslationEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduTranslationEngine.h; sourceTree = "<group>"; };
+		D2E9E1CB26628DF900A85C95 /* BaiduTranslationEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduTranslationEngine.m; sourceTree = "<group>"; };
 		F8784A7C091E410ADEAD2FC9 /* Pods-MyUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyUtils.debug.xcconfig"; path = "Target Support Files/Pods-MyUtils/Pods-MyUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4CBF2E21E5CF5B002F29A6 /* MyUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CBF3121E5CF5B002F29A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 				D2AB0FCD25FFA97E0049F09E /* GoogleTranslationEngine.m */,
 				D20661EF2623D9A100FA19CB /* BingTranslationEngine.h */,
 				D20661F02623D9A100FA19CB /* BingTranslationEngine.m */,
+				D2E9E1CA26628DF900A85C95 /* BaiduTranslationEngine.h */,
+				D2E9E1CB26628DF900A85C95 /* BaiduTranslationEngine.m */,
 				D2AB0FC525FFA7340049F09E /* XTranslationEngine.h */,
 				D2AB0FC625FFA7340049F09E /* XTranslationEngine.m */,
 			);
@@ -436,6 +442,7 @@
 				D2AB0FCE25FFA97E0049F09E /* GoogleTranslationEngine.m in Sources */,
 				D237447A260083D2001D948F /* GoogleCNTranslationEngine.m in Sources */,
 				D2AB0FC725FFA7340049F09E /* XTranslationEngine.m in Sources */,
+				D2E9E1CC26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */,
 				D2374485260090A2001D948F /* JSONFighting.m in Sources */,
 				D20661F12623D9A100FA19CB /* BingTranslationEngine.m in Sources */,
 				FC4CBF3321E5CF5B002F29A6 /* AppDelegate.m in Sources */,
@@ -458,6 +465,7 @@
 				D2E7D91D2600E52C0088C464 /* GoogleCNTranslationEngine.m in Sources */,
 				FC4CBF5321E5CF9A002F29A6 /* SourceEditorCommand.m in Sources */,
 				FC4CBF6221E5D7A5002F29A6 /* ColorStatement.m in Sources */,
+				D2E9E1CD26628DF900A85C95 /* BaiduTranslationEngine.m in Sources */,
 				FC76CADC21F980E200C7BA42 /* ColorStringSetting.m in Sources */,
 				D2E7D91F2600E5310088C464 /* GoogleTranslationEngine.m in Sources */,
 				D237448B2600DDE8001D948F /* Translator.m in Sources */,
