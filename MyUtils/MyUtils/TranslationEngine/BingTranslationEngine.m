@@ -7,6 +7,7 @@
 //
 
 #import "BingTranslationEngine.h"
+#import "JSONFighting.h"
 
 @implementation BingTranslationEngine
 
